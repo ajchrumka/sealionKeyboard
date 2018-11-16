@@ -39,15 +39,41 @@ class OptionViewController: UIViewController {
         case low = "1"
         case medium = "2"
         case high = "3"
-        case ctrla = "a"
-        case ctrlf = "f"
-        case ctrlm = "m"
-        case ctrlr = "r"
-        case ctrlz = "z"
+        case lowa = "a"
+        case lowb = "b"
+        case lowc = "c"
+        case lowd = "d"
+        case lowe = "e"
+        case lowf = "f"
+        case lowg = "g"
+        case lowh = "h"
+        case lowi = "i"
+        case lowj = "j"
+        case lowk = "k"
+        case lowl = "l"
+        case lowm = "m"
+        case lown = "n"
+        case lowo = "o"
+        case lowp = "p"
+        case lowq = "q"
+        case lowr = "r"
+        case lows = "s"
+        case lowt = "t"
+        case lowu = "u"
+        case lowv = "v"
+        case loww = "w"
+        case lowx = "x"
+        case lowy = "y"
+        case lowz = "z"
     }
     
+    @IBOutlet weak var textBox: UITextView!
     var previousKey = "{"
     var currentKey = "{"
+    
+    override func viewDidLoad() {
+        textBox.text = ""
+    }
 
     // Override keyCommands and return the three
     // key commands for this view controller.
@@ -69,30 +95,135 @@ class OptionViewController: UIViewController {
                      action: #selector(OptionViewController.performCommand(sender:)),
                      discoverabilityTitle: NSLocalizedString("HighPriority", comment: "High priority")),
 
-        UIKeyCommand(input: InputKey.ctrla.rawValue,
-                     modifierFlags: .control,
+        UIKeyCommand(input: InputKey.lowa.rawValue,
+                     modifierFlags: [],
                      action: #selector(OptionViewController.performCommand(sender:)),
-                     discoverabilityTitle: NSLocalizedString("ctrla", comment: "Control a")),
+                     discoverabilityTitle: NSLocalizedString("Lowa", comment: "Lower a")),
         
-        UIKeyCommand(input: InputKey.ctrlf.rawValue,
-                     modifierFlags: .control,
+        UIKeyCommand(input: InputKey.lowb.rawValue,
+                     modifierFlags: [],
                      action: #selector(OptionViewController.performCommand(sender:)),
-                     discoverabilityTitle: NSLocalizedString("ctrlf", comment: "Control f")),
+                     discoverabilityTitle: NSLocalizedString("Lowb", comment: "Lower b")),
         
-        UIKeyCommand(input: InputKey.ctrlm.rawValue,
-                     modifierFlags: .control,
+        UIKeyCommand(input: InputKey.lowc.rawValue,
+                     modifierFlags: [],
                      action: #selector(OptionViewController.performCommand(sender:)),
-                     discoverabilityTitle: NSLocalizedString("ctrlm", comment: "Control m")),
+                     discoverabilityTitle: NSLocalizedString("Lowc", comment: "Lower c")),
         
-        UIKeyCommand(input: InputKey.ctrlr.rawValue,
-                     modifierFlags: .control,
+        UIKeyCommand(input: InputKey.lowd.rawValue,
+                     modifierFlags: [],
                      action: #selector(OptionViewController.performCommand(sender:)),
-                     discoverabilityTitle: NSLocalizedString("ctrlr", comment: "Control r")),
+                     discoverabilityTitle: NSLocalizedString("Lowd", comment: "Lower d")),
         
-        UIKeyCommand(input: InputKey.ctrlz.rawValue,
-                     modifierFlags: .control,
+        UIKeyCommand(input: InputKey.lowe.rawValue,
+                     modifierFlags: [],
                      action: #selector(OptionViewController.performCommand(sender:)),
-                     discoverabilityTitle: NSLocalizedString("ctrlz", comment: "Control z"))
+                     discoverabilityTitle: NSLocalizedString("Lowe", comment: "Lower e")),
+        
+        UIKeyCommand(input: InputKey.lowf.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowf", comment: "Lower f")),
+        
+        UIKeyCommand(input: InputKey.lowg.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowg", comment: "Lower g")),
+        
+        UIKeyCommand(input: InputKey.lowh.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowh", comment: "Lower h")),
+        
+        UIKeyCommand(input: InputKey.lowi.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowi", comment: "Lower i")),
+        
+        UIKeyCommand(input: InputKey.lowj.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowj", comment: "Lower j")),
+        
+        UIKeyCommand(input: InputKey.lowk.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowk", comment: "Lower k")),
+        
+        UIKeyCommand(input: InputKey.lowl.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowl", comment: "Lower l")),
+        
+        UIKeyCommand(input: InputKey.lowm.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowm", comment: "Lower m")),
+        
+        UIKeyCommand(input: InputKey.lown.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lown", comment: "Lower n")),
+        
+        UIKeyCommand(input: InputKey.lowo.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowo", comment: "Lower o")),
+        
+        UIKeyCommand(input: InputKey.lowp.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowp", comment: "Lower p")),
+        
+        UIKeyCommand(input: InputKey.lowq.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowq", comment: "Lower q")),
+        
+        UIKeyCommand(input: InputKey.lowr.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowr", comment: "Lower r")),
+        
+        UIKeyCommand(input: InputKey.lows.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lows", comment: "Lower s")),
+        
+        UIKeyCommand(input: InputKey.lowt.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowt", comment: "Lower t")),
+        
+        UIKeyCommand(input: InputKey.lowu.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowu", comment: "Lower u")),
+        
+        UIKeyCommand(input: InputKey.lowv.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowv", comment: "Lower v")),
+        
+        UIKeyCommand(input: InputKey.loww.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Loww", comment: "Lower w")),
+        
+        UIKeyCommand(input: InputKey.lowx.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowx", comment: "Lower x")),
+        
+        UIKeyCommand(input: InputKey.lowy.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowy", comment: "Lower y")),
+        
+        UIKeyCommand(input: InputKey.lowz.rawValue,
+                     modifierFlags: [],
+                     action: #selector(OptionViewController.performCommand(sender:)),
+                     discoverabilityTitle: NSLocalizedString("Lowz", comment: "Lower z"))
         ]
     }
 
@@ -104,11 +235,32 @@ class OptionViewController: UIViewController {
         case .low: performSegue(withIdentifier: .low, sender: self)
         case .medium: performSegue(withIdentifier: .medium, sender: self)
         case .high: performSegue(withIdentifier: .high, sender: self)
-        case .ctrla: doUpdate(inKey:"a")
-        case .ctrlf: doUpdate(inKey:"f")
-        case .ctrlm: doUpdate(inKey:"m")
-        case .ctrlr: doUpdate(inKey:"r")
-        case .ctrlz: doUpdate(inKey:"z")
+        case .lowa: doUpdate(inKey: "a")
+        case .lowb: doUpdate(inKey: "b")
+        case .lowc: doUpdate(inKey: "c")
+        case .lowd: doUpdate(inKey: "d")
+        case .lowe: doUpdate(inKey: "e")
+        case .lowf: doUpdate(inKey: "f")
+        case .lowg: doUpdate(inKey: "g")
+        case .lowh: doUpdate(inKey: "h")
+        case .lowi: doUpdate(inKey: "i")
+        case .lowj: doUpdate(inKey: "j")
+        case .lowk: doUpdate(inKey: "k")
+        case .lowl: doUpdate(inKey: "l")
+        case .lowm: doUpdate(inKey: "m")
+        case .lown: doUpdate(inKey: "n")
+        case .lowo: doUpdate(inKey: "o")
+        case .lowp: doUpdate(inKey: "p")
+        case .lowq: doUpdate(inKey: "q")
+        case .lowr: doUpdate(inKey: "r")
+        case .lows: doUpdate(inKey: "s")
+        case .lowt: doUpdate(inKey: "t")
+        case .lowu: doUpdate(inKey: "u")
+        case .lowv: doUpdate(inKey: "v")
+        case .loww: doUpdate(inKey: "w")
+        case .lowx: doUpdate(inKey: "x")
+        case .lowy: doUpdate(inKey: "y")
+        case .lowz: doUpdate(inKey: "z")
         }
     }
 
@@ -141,6 +293,7 @@ class OptionViewController: UIViewController {
             print("No Movement")
         }
         print ("Current Key: " + currentKey + " Previous Key: " + previousKey + " New Key: " + inKey)
+        textBox.text += inKey
         previousKey = currentKey
         currentKey = inKey
     }
